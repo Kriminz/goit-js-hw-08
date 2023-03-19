@@ -12,7 +12,7 @@ const onPlay = function(time) {
 
 player.on('timeupdate', throttle((onPlay),  1000));
 
-player.setCurrentTime(30.456).then(function(seconds) {
+player.setCurrentTime(0.0).then(function(seconds) {
   seconds = time.seconds;
   })
     .catch(function(error) {
