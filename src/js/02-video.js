@@ -12,8 +12,8 @@ const onPlay = function(time) {
 
 player.on('timeupdate', throttle((onPlay),  1000));
 
-player.setCurrentTime(0.0).then(function(seconds) {
-  seconds = time.seconds;
+player.setCurrentTime(localStorage.getItem(LOCALSTORAGE_KEY)).then(function(seconds) {
+  // seconds = time.seconds;
   })
     .catch(function(error) {
       switch (error.name) {
